@@ -117,9 +117,9 @@ with tf.Session() as sess:
             # Test one
             print("Start Test")
             randidx   = np.random.randint\
-                        (testimg.shape[0], size=1)
-            orgvec    = testimg[randidx, :]
-            testvec   = testimg[randidx, :]
+                        (testing.shape[0], size=1)
+            orgvec    = testing[randidx, :]
+            testvec   = testing[randidx, :]
             label     = np.argmax(testlabel[randidx, :], 1)
 
             print("Test label is %d" % (label))
